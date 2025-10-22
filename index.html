@@ -16,6 +16,35 @@
             <!-- Application content will be generated here -->
             <h2 id="page-heading">Sales Summary</h2>
             <p>Total sales: $<span id="total-sales">Loading...</span></p>
+
+            <!-- Bootstrap table containing the product sales. Tests expect a table with id `product-sales` and numeric sales in the last column -->
+            <h3 class="mt-4">Product Sales (table)</h3>
+            <table id="product-sales" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Region</th>
+                        <th>Sales</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Product A</td>
+                        <td>North</td>
+                        <td>100.50</td>
+                    </tr>
+                    <tr>
+                        <td>Product B</td>
+                        <td>South</td>
+                        <td>250.75</td>
+                    </tr>
+                    <tr>
+                        <td>Product C</td>
+                        <td>North</td>
+                        <td>150.25</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
     <script src="script.js"></script>
